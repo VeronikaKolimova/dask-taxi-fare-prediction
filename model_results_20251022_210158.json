@@ -1,0 +1,44 @@
+{
+  "timestamp": "20251022_210158",
+  "training_info": {
+    "training_time_minutes": 45.91683333333334,
+    "training_samples": 9676561,
+    "test_samples": 2419154,
+    "features_used": [
+      "trip_distance",
+      "trip_duration_sec",
+      "speed_mph",
+      "passenger_count",
+      "pickup_hour"
+    ]
+  },
+  "model_parameters": {
+    "coefficients": {
+      "trip_distance": 8.14557114,
+      "trip_duration_sec": 2.58361537,
+      "speed_mph": -0.33365689,
+      "passenger_count": -0.01193644,
+      "pickup_hour": -0.03222531
+    },
+    "intercept": 12.6811,
+    "model_type": "LinearRegression"
+  },
+  "performance_metrics": {
+    "mse": 6.977060571956093,
+    "rmse": 2.6414126091839747,
+    "mae": 0.7113732528597622,
+    "r2": 0.9366284672821655
+  },
+  "error_analysis": {
+    "median_absolute_error": 0.3842471160919234,
+    "max_error": 596.4637276642127,
+    "error_std": 2.543817734640555,
+    "percentile_95": 1.7948542815919142
+  },
+  "accuracy_analysis": {
+    "within_1_dollar": 88.3,
+    "within_2_dollars": 95.8,
+    "within_5_dollars": 98.7,
+    "within_10_dollars": 99.3
+  }
+}
